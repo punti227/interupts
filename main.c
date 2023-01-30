@@ -7,10 +7,10 @@ ISR (INT0_vect){
     PORTB |= (1<<PB4); // turn PB4 (yellow light) on
     _delay_ms(1000); // wait 1 sec
     PORTB &= ~(1<<PB4); // turn PB4 (yellow light) off
-    PORTB |= (1<<PB1); // turn PB4 (green light) on
+    PORTB |= (1<<PB1); // turn PB1 (green light) on
     _delay_ms(1000); // wait 1 sec
-    PORTB &= ~(1<<PB1); // turn PB4 (green light) off
-    PORTB |= (1<<PB3); // turn PB4 (red light) on
+    PORTB &= ~(1<<PB1); // turn PB1 (green light) off
+    PORTB |= (1<<PB3); // turn PB3 (red light) on
     _delay_ms(1000); // wait 1 sec
 }
 
